@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Swap</title>
+</head>
+<body>
+    <img id="myImage" src="first-image.jpg" alt="First Image" onclick="changeImage()">
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("first-image.jpg")) {
+                image.src = "second-image.jpg";
+            } else {
+                image.src = "first-image.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
