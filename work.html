@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Swap</title>
+    <title>JavaScript Practice</title>
 </head>
 <body>
-    <img id="myImage" src="first-image.jpg" alt="First Image" onclick="changeImage()">
+    <h2 id="myH2" onclick="changeText()">Learning JavaScript</h2>
+    <img id="myImage" src="image/55.jpg" alt="First Image" onclick="changeImage()">
+    <button onclick="changeText()">Click Me</button>
+    <p id="myParagraph">This is a paragraph.</p>
 
     <script>
         function changeImage() {
             var image = document.getElementById('myImage');
-            if (image.src.match("first-image.jpg")) {
-                image.src = "second-image.jpg";
+            if (image.src.match("image/55.jpg")) {
+                image.src = "image/22.jpeg";
             } else {
-                image.src = "first-image.jpg";
+                image.src = "image/11.jpeg";
+            }
+        }
+
+        function changeText() {
+            var h2 = document.getElementById('myH2');
+            var para = document.getElementById('myParagraph');
+            if (h2.innerHTML === "Learning JavaScript") {
+                h2.innerHTML = "JavaScript is fun!";
+                para.innerHTML = "You clicked the heading!";
+            } else {
+                h2.innerHTML = "Learning JavaScript";
+                para.innerHTML = "This is a paragraph.";
             }
         }
     </script>
