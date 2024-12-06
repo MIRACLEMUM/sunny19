@@ -1,0 +1,18 @@
+<h2 id="myH2" onclick="changeText()">Learning JavaScript</h2>
+    <img id="myImage" src="" alt="First Image" onclick="changeImage()">
+    <button onclick="changeText()">Click Me</button>
+    <p id="myParagraph">This is a paragraph.</p>
+
+  <script>
+  function changeText() {
+    var h2 = document.getElementById('myH2');
+    var para = document.getElementById('myParagraph');
+    if (h2.innerHTML === "Learning JavaScript") {
+        h2.innerHTML = "JavaScript is fun!";
+        para.innerHTML = "You clicked the heading!";
+    } else {
+        h2.innerHTML = "Learning JavaScript";
+        para.innerHTML = "This is a paragraph.";
+    }
+}
+</scri
