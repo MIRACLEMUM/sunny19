@@ -30,6 +30,29 @@ let e = 5 <=3;
 //console.log(5 >= 3);  // true
 //console.log(5 <= 3);  // false
 
+for (let i = 3; i <= 100; i++){
+  if(i % 2 !==1)
+    console.log(i);
+
+
+}
+
+
+const num = []
+for (let i = 1; i <= 100; i+= 2) {
+  num.push(i)
+}
+console.log(num);
+
+const pincode =[]
+  for (let i = 0; i < 999; i++) {
+    let pin = i.toString().padstart(3,'0')
+    pincode.push(pin)
+  }
+  console.log(pincode)
+
+
+
 
 
 
